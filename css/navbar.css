@@ -1,0 +1,45 @@
+nav {
+  flex: 0 0 250px;
+  min-height: 100vh;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  color: rgba(255, 255, 255, 0.7);
+}
+nav section {
+  height: 100%;
+  position: fixed;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: calc(100vw - 250px - 20px);
+}
+ nav section ul li {
+  padding: 0.6em 0 0.6em 0;
+  height: 18px;
+}
+nav section ul li i, #collapse-button {
+  padding-left: 0.4em;
+  cursor: pointer;
+}
+.profile {
+  display: flex;
+}
+.profile i {
+  font-size: 46px;
+}
+.profile p {
+  margin: 6% 0 0 5%;
+  width: 180px;
+}
+#collapse-button {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  /* cursor: pointer; */
+}
+#collapse-button > p {
+  padding-left: 0.8em;
+  margin: 0.3em 0 0 0;
+}
+#expand-button {
+  transform: rotate(180deg);
+}

@@ -1,8 +1,3 @@
-const routes = [
-  { path: '/', component: appLandingPage },
-  { path: '/lesson-one', component: appLessonOne }
-]
-
 const router = new VueRouter({
   routes
 })
@@ -10,9 +5,10 @@ const router = new VueRouter({
 const App = new Vue({
   el: '#app',
   router,
-  data() {
-    return {
-      text: 'test'
+  store,
+  computed: {
+    navbarWidth () {
+      return this.$store.getters.getNavbarWidth
     }
   }
 });

@@ -1,0 +1,63 @@
+#chapter {
+  display: flex;
+  flex-direction: column;
+}
+#chapter-tip > .card {
+  height: calc(auto + 1rem);
+}
+#chapter-tip > .card > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+#chapter-tip > .card > div > i {
+  margin: 1rem 1rem 0 0;
+  cursor: pointer;
+}
+#chapter-tip > .card > div:last-of-type {
+  margin-bottom: 1rem;
+}
+#chapter-tip > .card > div:last-of-type > .button {
+  margin-left: 1rem;
+}
+#chapter-task > .card {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+#chapter-task > .card > div {
+  display: flex;
+  padding: 0.6em 1em 0.4em 0.4em;
+}
+#chapter-task > .card > div > p {
+  margin: 6px 0 0 0;
+}
+#chapter-task > .card > p, #chapter-tip > .card > div > p {
+  padding: 0 0 0 1em;
+}
+#chapter-chat > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#chapter-chat > div > img {
+  height: 150px;
+}
+#chapter-chat > div > div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em 0 1em;
+}
+#chapter-chat > div > div > h5 {
+  margin: 1rem 0 0 0;
+}
+#chapter-content {
+  flex: 1 1 auto;
+}
+#chapter-content > div {
+  height: 93%;
+  margin: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -1,0 +1,124 @@
+#dashboard, #chapter {
+  height: 100vh;
+  overflow: hidden;
+}
+#dashboard > section {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+#dashboard > section:first-of-type {
+  height: 10vh;
+}
+#dashboard > section:nth-last-of-type(2) {
+  height: 27vh;
+}
+#dashboard > section:last-of-type {
+  height: 63vh;
+}
+#dashboard > section > div {
+  width: 100%;
+}
+#dashboard > section:not(:nth-of-type(2)) > div {
+  margin: 0 3%;
+}
+#dashboard > section:first-of-type > div {
+  margin-top: 3%;
+}
+#dashboard > section:last-of-type > div {
+  margin-bottom: 3%;
+}
+#dashboard > section:nth-of-type(2) {
+  width: 120%;
+}
+#dashboard > section:nth-of-type(2) > div {
+  margin-left: 2.5%;
+  display: flex;
+}
+#dashboard > section:nth-of-type(2) > div > .card:first-of-type,
+#dashboard > section:last-of-type > div > .card {
+  margin-left: 0;
+}
+#dashboard > section:nth-of-type(2) > div > .card {
+  cursor: pointer;
+  flex-basis:20%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  background-size: cover;
+  background-position-x: center;
+}
+#chapter-card-0 {
+  background-image: url('../assets/chapter_img_mazikeen.png');
+}
+#chapter-card-1 {
+  background-image: url('../assets/chapter_img_misran.png');
+}
+#chapter-card-2 {
+  background-image: url('../assets/chapter_img_takehiko.png');
+}
+#chapter-card-3 {
+  background-image: url('../assets/chapter_img_the_presence.png');
+}
+#dashboard > section:nth-of-type(2) > div > .card > section:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  /*https://stackoverflow.com/questions/4772906/css-is-it-possible-to-add-a-black-outline-around-each-character-in-text*/
+  text-shadow: 1px 0 0 rgba(0,0,0,.5), 0 -1px 0 rgba(0,0,0,.5), 0 1px 0 rgba(0,0,0,.5), -1px 0 0 rgba(0,0,0,.5);
+}
+#dashboard > section:nth-of-type(2) > div > .card > section:first-of-type > p:first-of-type {
+  padding: 0 1em 0 1em;
+}
+#dashboard > section:nth-of-type(2) > div > .card > section:first-of-type > div {
+  display: flex;
+  padding: 0.9em 0.6em 0.6em 0;
+}
+#dashboard > section:nth-of-type(2) > div > .card > section:first-of-type > div > .caption {
+  margin: 0;
+  padding: 0.4em 0.2em 0 0;
+}
+#dashboard > section:nth-of-type(2) > div > .card > section:last-of-type {
+  display: flex;
+  height: 0%;
+  width: 100%;
+  background-color:rgba(103, 101, 101, .95);
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+#dashboard > section:nth-of-type(2) > div > .card > section:last-of-type > i {
+ padding: 0.6em 0.4em 0.4em 0.4em;
+}
+#dashboard-navigation-container {
+  display: flex;
+  justify-content: space-between;
+}
+#dashboard-navigation-container > div > h3 {
+  margin-top: -15px;
+}
+#searchbody {
+  opacity: .95;
+  min-width: 200px;
+  margin-left: 15px;
+  border-radius: 45px;
+}
+#statistics-view {
+  display: flex;
+  width: 65%;
+  height: calc(100% - 1rem);
+  justify-content: center;
+  align-items: center;
+}
+#statistics-view > p {
+  opacity: .5;
+}
+@media only screen and (max-height: 800px) {
+  #statistics-view {
+    margin-top: 3rem;
+    height: calc(100% - 2rem);
+  }
+}
+.available {
+  background-color: rgba(213,41,22, .9) !important;
+}
