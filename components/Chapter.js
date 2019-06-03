@@ -23,7 +23,7 @@ const appChapter = Vue.component('app-chapter', {
       return this.contentHeight
     },
     getChatImg () {
-      /* return '../assets/' + this.chapterData[this.chapterNumber].chat[this.chatIndex].img + '.png' */
+      return '../assets/' + this.chapterData[this.chapterNumber].chat[this.chatIndex].img
     },
     getTipTimer () {
       return this.tipTimer
@@ -73,14 +73,14 @@ const appChapter = Vue.component('app-chapter', {
           <h5>{{ chapterData[chapterNumber].chat[chatIndex].who }} speaks... </h5>
           <p>{{ chapterData[chapterNumber].chat[chatIndex].body }}</p>
         </div>
-        <img src="../assets/lucifer_chat_one.png" alt="Person speaking"/>
+        <img :src="getChatImg" alt="Person speaking"/>
       </div>
     </section>
     <section id="chapter-content">
       <div :style="{ height: getContentHeight }">
         <p class="subtitle">Step 1/3</p>
-        <h6>Create your free hell account</h6>
-        <p>Enjoy your free first month unlimited membership with access to all pain and suffering.</p>
+        <h6>Create your free underworld account</h6>
+        <p>Enjoy your first month free unlimited membership with access to all pain and suffering.</p>
         <input type="text">
         <input type="text">
       </div>

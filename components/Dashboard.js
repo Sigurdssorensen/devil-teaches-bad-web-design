@@ -34,10 +34,11 @@ const appDashboard = Vue.component('app-dashboard', {
         <div>
             <article
               v-for="(chapter, index) in chapterData"
-              :id="'chapter-card-' + index"
+              
               :chapter="chapter"
               :index="index"
               :key="chapter.id"
+              :style="{backgroundImage: 'url(../assets/' + chapter.img + ')'}"
               @mouseover="chapter.bodyHeight = 25"
               @mouseleave="chapter.bodyHeight = 0" 
               @click="requestChapter(chapter.available, index)"
