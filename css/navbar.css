@@ -1,7 +1,9 @@
 nav {
   flex: 0 0 250px;
   min-height: 100vh;
+  /* The following code has been sourced from: (Thornton, S. n.d.) */
   box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  /* End of sourced code */
   color: rgba(255, 255, 255, 0.7);
 }
 nav section {
@@ -34,7 +36,6 @@ nav section ul li i, #collapse-button {
   position: absolute;
   bottom: 30px;
   display: flex;
-  /* cursor: pointer; */
 }
 #collapse-button > p {
   padding-left: 0.8em;

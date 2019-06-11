@@ -22,8 +22,8 @@ const appHome = Vue.component('app-home', {
       }
     },
     authenticateUser () {
-      this.$store.dispatch('setName', this.name)
-      this.$store.dispatch('setPassword', this.password)
+      this.$store.dispatch('setName', this.name.toLowerCase())
+      this.$store.dispatch('setPassword', this.password.toLowerCase())
       this.$store.dispatch('authenticate', true)
       this.togglePopup()
       this.$router.push('/dashboard')
@@ -55,7 +55,7 @@ const appHome = Vue.component('app-home', {
         <div>
           <h4>Create account</h4>
           <p>Hi there! We hate paperwork too, so let's keep it short and friendly</p>
-          <form id="signup-form">
+          <form class="signup-form">
             <div class="floating-input">
               <label :class="{'float-label': nameLabelFocus}" class="subtitle-2" for="username">Name</label>
               <input @focus="labelFocus('name')" @blur="labelFocus('name')" v-model="name" @input="checkRequiredFields" class="signup-popup-item" type="text" name="name" id="username">
@@ -82,47 +82,10 @@ const appHome = Vue.component('app-home', {
           <br>
           for a horrible experience from the Devil himself!</p>
         <div class="button-row">
-          <a @click="checkIfAuthenticated" class="button">
+          <button @click="checkIfAuthenticated" class="button">
           get started
-          </a>
+          </button>
         </div>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h4>some awsome why tagline here</h4>
-        <div class="selling-points-container">
-          <div class="selling-points">
-            <p>test1</p>
-          </div>
-          <div class="selling-points">
-            <p>test2</p>
-          </div>
-          <div class="selling-points">
-            <p>test3</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h4>some awsome for whom tagline here</h4>
-        <div class="selling-points-container">
-          <div class="selling-points">
-            <p>test1</p>
-          </div>
-          <div class="selling-points">
-            <p>test2</p>
-          </div>
-          <div class="selling-points">
-            <p>test3</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h4>Call to Action</h4>
       </div>
     </section>
   </div>

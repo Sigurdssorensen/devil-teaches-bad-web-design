@@ -3,14 +3,14 @@
   flex-direction: column;
   justify-content: center;
 }
-#home > section {
+#home > section, #about > section {
   min-height: 100vh;
   display: flex;
 }
 #home > section:not(:first-of-type) > div {
   width: 75%;
 }
-#home > section > div {
+#home > section > div, #about > section > div {
   margin: auto;
 }
 .page-header-tagline {
@@ -55,7 +55,7 @@
 .card-popup > div > h4 {
   margin: 0;
 }
-#signup-form {
+.signup-form {
   display: flex;
   flex-direction: column;
 }
