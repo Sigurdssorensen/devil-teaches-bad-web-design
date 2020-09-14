@@ -13,4 +13,8 @@ You need to remember these credentials further down the line, so make them easy 
 https://devil-teaches-bad-ux.web.app/
 
 ## Original Codebase
+Due to the course restrictions, I had to convert the npm based project to this cdn based version.
+Given that the code was written to be converted to a cdn version, the original codebase does not
+follow the standard conventions as expected with Vue.js.
+
 https://github.com/sorensensig/template-devil-teaches-bad-ux
